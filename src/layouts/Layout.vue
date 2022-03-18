@@ -7,6 +7,14 @@
           Awesome Todo
         </q-toolbar-title>
 
+        <q-btn
+          to="/auth"
+          flat
+          icon-right="account_circle"
+          label="Login"
+          class="absolute-right"
+        />
+
       </q-toolbar>
     </q-header>
 
@@ -45,7 +53,7 @@
             <q-item-label>{{ nav.label }}</q-item-label>
           </q-item-section>
         </q-item>
-        
+
       </q-list>
     </q-drawer>
 
@@ -89,7 +97,7 @@
       display: none;
     }
   }
-  
+
   .q-drawer {
     .q-router-link--exact-active {
       color: white !important;
